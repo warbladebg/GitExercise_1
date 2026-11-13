@@ -7,7 +7,8 @@ namespace GitExercise
         public static string[] OptionsList = {
             "a - Add",
             "s - Subtract",
-            "m - Multiply"
+            "m - Multiply",
+            "p - Power"
         };
 
         public static void Add(double a, double b)
@@ -23,6 +24,11 @@ namespace GitExercise
         public static void Subtract(double a, double b)
         {
             Console.WriteLine($"{a} - {b} = {a - b}");
+        }
+
+        public static void Power(double a, double b)
+        {
+            Console.WriteLine($"{a} ^ {b} = {Math.Pow(a, b)}");
         }
     }
 }
