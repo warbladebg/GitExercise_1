@@ -41,6 +41,9 @@ namespace GitExercise
                 case "l":
                     OptionsManager.Logarithm(a, b);
                     break;
+                case "f":
+                    OptionsManager.FactorialsSum(a, b);
+                    break;
             }
 
             Console.WriteLine("Pres any key to close the app...");
