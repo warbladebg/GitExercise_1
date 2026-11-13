@@ -4,8 +4,16 @@ namespace GitExercise
 {
     public class Startup
     {
+        private const string Password = "abcd1234";
+
         public static void Main()
         {
+            if (!HasAccess())
+            {
+                Console.WriteLine("Wrong password! Access denied.");
+                return;
+            }
+
             Console.WriteLine("Console Calculator App");
             Console.WriteLine(new string('-', 15));
 
@@ -45,6 +53,14 @@ namespace GitExercise
 
             Console.WriteLine("Pres any key to close the app...");
             Console.ReadKey(true);
+        }
+
+        private static bool HasAccess()
+        {
+            Console.Write("Password: ");
+            string input = Console.ReadLine();
+
+            return input == Password;
         }
     }
 }
