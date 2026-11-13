@@ -8,7 +8,8 @@ namespace GitExercise
             "a - Add",
             "s - Subtract",
             "m - Multiply",
-            "p - Power"
+            "p - Power",
+            "l - Logarithm"
         };
 
         public static void Add(double a, double b)
@@ -29,6 +30,17 @@ namespace GitExercise
         public static void Power(double a, double b)
         {
             Console.WriteLine($"{a} ^ {b} = {Math.Pow(a, b)}");
+        }
+
+        public static void Logarithm(double a, double b)
+        {
+            if (a <= 0 || b <= 0 || b == 1)
+            {
+                Console.WriteLine("Logarithm needs a > 0 and a base b > 0, b != 1.");
+                return;
+            }
+
+            Console.WriteLine($"log{b}({a}) = {Math.Log(a, b)}");
         }
     }
 }

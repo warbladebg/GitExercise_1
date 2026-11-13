@@ -38,6 +38,9 @@ namespace GitExercise
                 case "p":
                     OptionsManager.Power(a, b);
                     break;
+                case "l":
+                    OptionsManager.Logarithm(a, b);
+                    break;
             }
 
             Console.WriteLine("Pres any key to close the app...");
