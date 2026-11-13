@@ -59,6 +59,15 @@ namespace GitExercise
                     case "r":
                         OptionsManager.DivideRemainder(a, b);
                         break;
+                    case "p":
+                        OptionsManager.Power(a, b);
+                        break;
+                    case "l":
+                        OptionsManager.Logarithm(a, b);
+                        break;
+                    case "f":
+                        OptionsManager.FactorialsSum(a, b);
+                        break;
                     default:
                         Console.WriteLine("Unknown option.");
                         break;
