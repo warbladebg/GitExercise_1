@@ -9,7 +9,9 @@ namespace GitExercise
             "s - Subtract",
             "m - Multiply",
             "d - Divide",
-            "sa - Subtract (absolute value)"
+            "sa - Subtract (absolute value)",
+            "r - Remainder",
+            "e - Exit"
         };
 
         public static void Add(double a, double b)
@@ -41,6 +43,17 @@ namespace GitExercise
         public static void SubtractAbs(double a, double b)
         {
             Console.WriteLine($"|{a} - {b}| = {Math.Abs(a - b)}");
+        }
+
+        public static void DivideRemainder(double a, double b)
+        {
+            if (b == 0)
+            {
+                Console.WriteLine("Cannot divide by zero.");
+                return;
+            }
+
+            Console.WriteLine($"{a} % {b} = {a % b}");
         }
     }
 }
