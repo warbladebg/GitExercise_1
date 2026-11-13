@@ -38,6 +38,9 @@ namespace GitExercise
                 case "d":
                     OptionsManager.Divide(a, b);
                     break;
+                case "sa":
+                    OptionsManager.SubtractAbs(a, b);
+                    break;
             }
 
             Console.WriteLine("Pres any key to close the app...");
